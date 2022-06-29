@@ -1,4 +1,4 @@
 web: gunicorn bam_api.wsgi
-release: python manage.py makemigrations --noinput
-release: python manage.py collectstatic --noinput
-release: python manage.py migrate --noinput
+release: python3.8 manage.py makemigrations --noinput
+release: python3.8 manage.py collectstatic --noinput
+release: python3.8 manage.py migrate --noinput
